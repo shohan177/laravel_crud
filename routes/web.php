@@ -18,3 +18,5 @@ Route::get('table','CrudController@showTable') -> name('table');
 Route::post('add_student','CrudController@insertStudent') -> name('insert');
 Route::get('single_view/{id}','CrudController@showSingle') -> name('singleView');
 Route::get('delete_student/{id}','CrudController@deleteStudent') -> name('deleteStudent');
+Route::get('edit_student/{id}','CrudController@editStudent') -> name('editStudentData');
+Route::post('update_student/{id}','CrudController@upadateStudent') -> name('updateStudent');
